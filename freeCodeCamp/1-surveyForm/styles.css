@@ -1,0 +1,62 @@
+body {
+  background: url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg') no-repeat;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#title {
+  font-size: 2.0rem;
+  font-weight: 400;
+  color: rgb(243, 243, 243);
+}
+
+#description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(243, 243, 243);
+}
+
+#survey-form {
+  background-color:rgba(27, 27, 50, 0.8);
+  color: rgb(243, 243, 243);
+  max-width: 768px;
+  margin: 3em auto;
+  padding: 3em 2.3em;
+  font-size: 1.1rem;
+  border-radius: 0.3em;
+}
+
+.form-group {
+  margin-bottom: 1.3em;
+  display: grid;
+}
+
+input[type="text"], [type="email"], [type="number"], #dropdown, #dropdown-feature {
+  background-color: rgb(243, 243, 243);
+  height: 2.5em;
+  border-radius: 0.4em;
+  padding: 0 0.9em;
+  font-size: 1rem;
+  font-family: 'Poppins';
+  color:#555555;
+}
+
+input[type="radio"] {
+  height: 1.3em;
+  width: 1.3em;
+}
+
+#submit {
+  height: 2.5em;
+  background-color: #55c377; 
+  color: #ffffff;
+  border: none;
+  border-radius: 0.2em;
+  font-size: 1rem;
+  font-family: 'Poppins';
+}
