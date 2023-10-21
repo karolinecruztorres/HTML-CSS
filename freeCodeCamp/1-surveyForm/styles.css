@@ -1,34 +1,42 @@
 body {
-  background: url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg') no-repeat;
+  background: url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg') no-repeat fixed center;
   margin: 0;
+  background-size:cover;
   font-family: 'Poppins';
 }
 
+.container {
+  background: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7));
+}
+
 header {
-  margin: 0 auto;
+  margin: 3.5em auto 0 auto;
   text-align: center;
 }
 
 #title {
-  font-size: 2.0rem;
+  font-size: 2.4rem;
   font-weight: 400;
   color: rgb(243, 243, 243);
+  margin: 0;
 }
 
 #description {
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 200;
   color: rgb(243, 243, 243);
+  margin: 0;
 }
 
 #survey-form {
   background-color:rgba(27, 27, 50, 0.8);
   color: rgb(243, 243, 243);
   max-width: 768px;
-  margin: 3em auto;
-  padding: 3em 2.3em;
-  font-size: 1.1rem;
-  border-radius: 0.3em;
+  margin: 2.2em auto;
+  padding: 2.3em;
+  font-size: 1.3rem;
+  border-radius: 0.2em;
 }
 
 .form-group {
@@ -38,25 +46,48 @@ header {
 
 input[type="text"], [type="email"], [type="number"], #dropdown, #dropdown-feature {
   background-color: rgb(243, 243, 243);
-  height: 2.5em;
+  height: 2.4em;
   border-radius: 0.4em;
   padding: 0 0.9em;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: 'Poppins';
-  color:#555555;
+  color:#495057;
+  margin-top: 0.4em;
 }
 
-input[type="radio"] {
-  height: 1.3em;
-  width: 1.3em;
+p, label[for="comments"] {
+  margin-bottom: 0.4em;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  height: 1.8em;
+  width: 1.8em;
+  
+}
+
+.centered {
+  display: flex;
+  gap: 0.4em;
+  margin: 0 0 0.3em 0;
+}
+
+#comments {
+  background-color: rgb(243, 243, 243);
+  height: 6em;
+  padding: 0.4em 0.6em;
+  font-size: 1.2rem;
+  font-family: 'Poppins';
+  color:#495057;
+  /*fazer com que text área não possa aumentar para lateral, somente para baixo*/
 }
 
 #submit {
-  height: 2.5em;
-  background-color: #55c377; 
+  height: 2.8em;
+  background-color: #37AF65; 
   color: #ffffff;
   border: none;
-  border-radius: 0.2em;
-  font-size: 1rem;
+  border-radius: 3px;
+  font-size: 1.2rem;
   font-family: 'Poppins';
+  margin-top: 0.5em;
 }
