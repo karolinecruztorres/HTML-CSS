@@ -6,8 +6,7 @@
   .request-button {
     background-color: #000;
     color: #fff;
-    height: 42px;
-    width: 125px;
+    padding: 13px 22px;
     border: none;
     font-size: 14px;
     margin: 10px 0;
@@ -22,8 +21,7 @@
   .add-to-cart-button {
     background-color: rgb(255,216,20);
     color: rgb(0, 0, 0);
-    height: 40px;
-    width: 220px;
+    padding: 10px 65px;
     border: none;
     border-radius: 20px;
     font-size: 18px;
@@ -39,8 +37,7 @@
   .sign-up-button {
     background-color: rgb(46,164,79);
     color: rgb(255,255,255);
-    height: 40px;
-    width: 110px;
+    padding: 11px 26px;
     border: none;
     border-radius: 6px;
     font-size: 16px;
@@ -57,8 +54,7 @@
   .get-started-button {
     background-color: rgb(121,82,179);
     color: rgb(255,255,255);
-    height: 45px;
-    width: 130px;
+    padding: 13px 23px;
     border: none;
     border-radius: 4px;
     font-size: 16px;
@@ -74,8 +70,7 @@
   .download-button {
     background-color: rgb(255,255,255);
     color: rgb(108,117,125);
-    height: 45px;
-    width: 120px;
+    padding: 12px 21px;
     border: rgb(108,117,125) solid 1px;
     border-radius: 4px;
     font-size: 16px;
@@ -94,8 +89,7 @@
   .apply-button {
     background-color: rgb(10,102,194);
     color: rgb(255,255,255);
-    height: 45px;
-    width: 290px;
+    padding: 11px 23px;
     border: none;
     border-radius: 23px;
     font-size: 19px;
@@ -111,8 +105,7 @@
   .save-button {
     background-color: rgb(255, 255, 255);
     color: rgb(10,102,194);
-    height: 45px;
-    width: 85px;
+    padding: 10px 19px;   
     border: rgb(10,102,194) 1px solid;
     border-radius: 23px;
     font-size: 19px;
@@ -128,85 +121,99 @@
     border-width: 2px;
   }
 
-  .amazon-link {
-    color: rgb(0,113,133);
-    cursor: pointer;
+  .back-button {
+    padding: 8px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 400;
   }
 
-  .amazon-link:hover {
-    color: rgb(189, 80, 7);
+  .next-button {
+    padding: 8px;
+    margin-left: 4px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .pagination {
+    margin-right: 6px;
+    font-size: 16px;
+    font-weight: 400;
   }
 
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-  }
-
-  .price {
-    color: rgb(0,136,0);
-    font-weight: bold;
-  }
-
-  .add-button {
-    background-color: rgb(249, 217, 76);
-    height: 30px;
-    width: 110px;
+  .stretch-button {
+    padding: 7px 15px;
+    background-color: green;
+    color: #fff;
     border: none;
-    border-radius: 15px;
-    margin-right: 8px;
+    font-size: 17px;
+    font-weight: 400;
     cursor: pointer;
-    transition: background-color 0.15s;
+    transition: padding 1s;
   }
 
-  .add-button:hover {
-    background-color: rgb(250, 205, 6);
+  .stretch-button:hover {
+    padding: 16px 36px;
   }
 
-  .add-button:active {
-    opacity: 0.5;
-  }
-
-  .buy-button {
-    background-color: rgb(255,164,28);
-    height: 30px;
-    width: 110px;
+  .shadow-button {
+    padding: 7px 15px;
+    background-color: green;
+    color: #fff;
     border: none;
-    border-radius: 15px;
+    font-size: 17px;
+    font-weight: 400;
     cursor: pointer;
-    transition: background-color 0.15s;
+    box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.15s;
   }
 
-  .buy-button:hover {
-    background-color: rgb(241, 117, 35);
+  .shadow-button:active {
+    margin: 2px 0 0 2px;
+    box-shadow: none;
   }
 
-  .buy-button:active {
-    opacity: 0.5;
+  .number-button {
+    padding: 8px 15px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 10px;
+    transition: padding 0.2s,
+      margin 0.2s;
   }
+
+  .number-button:hover {
+    padding: 8px 25px;
+    margin: 0;
+  }
+
 </style>
 
-<!--3a-->
+<!--4a-->
 <button class="request-button">
   Request now
 </button>
 
 <hr>
 
-<!--3b-->
+<!--4b-->
 <button class="add-to-cart-button">
   Add to Cart
 </button>
 
 <hr>
 
-<!--3c-->
+<!--4c-->
 <button class="sign-up-button">
   Sign up
 </button>
 
 <hr>
 
-<!--3d-->
+<!--4d-->
 <button class="get-started-button">
   Get started
 </button>
@@ -217,7 +224,7 @@
 
 <hr>
 
-<!--3e-->
+<!--4e-->
 <button class="apply-button">
   Apply on company website
 </button>
@@ -228,13 +235,29 @@
 
 <hr>
 
-<!--3f (challenge) -->
-<a class="amazon-link" href="https://www.amazon.com/" target="_blank">
-  Back to Amazon
-</a>
+<!-- Challenges -->
+<!--4h-->
+<button class="back-button">Back</button>
+<a class="pagination" href="#">1</a>
+<a class="pagination" href="#">2</a>
+<a class="pagination" href="#">3</a>
+<a class="pagination" href="#">4</a>
+<a class="pagination" href="#">5</a>
+<button class="next-button">Next</button>
 
-<p class="title">Nike Black Running Shoes</p>
-<p class="price">$ 39 - in stock.</p>
-<p class="delivery">Free delivery tomorrow.</p>
-<button class="add-button">Add to Cart</button>
-<button class="buy-button">Buy now</button>
+<hr>
+
+<!--4i-->
+<button class="stretch-button">Stretch</button>
+
+<hr>
+
+<!--4j-->
+<button class="shadow-button">Shadow</button>
+
+<hr>
+
+<!--4k-->
+<button class="number-button">One</button>
+<button class="number-button">Two</button>
+<button class="number-button">Three</button>
