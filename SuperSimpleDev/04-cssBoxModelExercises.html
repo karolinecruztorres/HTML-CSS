@@ -1,263 +1,78 @@
-<style>
-  button {
-    font-family: Arial, Helvetica, sans-serif;
-  }
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Box Model Exercises</title>
+    <link rel="stylesheet" href="styles/cssBoxModel.css">
+  </head>
+  <body>
+    <!--4a-->
+    <button class="request-button">
+      Request now
+    </button>
 
-  .request-button {
-    background-color: #000;
-    color: #fff;
-    padding: 13px 22px;
-    border: none;
-    font-size: 14px;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: opacity 0.2s;
-  }
+    <hr>
 
-  .request-button:hover {
-    opacity: 0.8;
-  }
+    <!--4b-->
+    <button class="add-to-cart-button">
+      Add to Cart
+    </button>
 
-  .add-to-cart-button {
-    background-color: rgb(255,216,20);
-    color: rgb(0, 0, 0);
-    padding: 10px 65px;
-    border: none;
-    border-radius: 20px;
-    font-size: 18px;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: background-color 0.15s;
-  }
+    <hr>
 
-  .add-to-cart-button:hover {
-    background-color: rgb(250, 205, 6);
-  }
+    <!--4c-->
+    <button class="sign-up-button">
+      Sign up
+    </button>
 
-  .sign-up-button {
-    background-color: rgb(46,164,79);
-    color: rgb(255,255,255);
-    padding: 11px 26px;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: box-shadow 0.2s;
-  }
+    <hr>
 
-  .sign-up-button:hover {
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.15);
-  }
+    <!--4d-->
+    <button class="get-started-button">
+      Get started
+    </button>
 
-  .get-started-button {
-    background-color: rgb(121,82,179);
-    color: rgb(255,255,255);
-    padding: 13px 23px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.15s;
-  }
+    <button class="download-button">
+      Download
+    </button>
 
-  .get-started-button:hover {
-    background-color: rgb(88, 59, 131);
-  }
+    <hr>
 
-  .download-button {
-    background-color: rgb(255,255,255);
-    color: rgb(108,117,125);
-    padding: 12px 21px;
-    border: rgb(108,117,125) solid 1px;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px;
-    cursor: pointer;
-    transition: background-color 0.15s,
-      color 0.15s;
-  }
+    <!--4e-->
+    <button class="apply-button">
+      Apply on company website
+    </button>
 
-  .download-button:hover {
-    background-color: rgb(108,117,125);
-    color: rgb(255,255,255);
-  }
+    <button class="save-button">
+      Save
+    </button>
 
-  .apply-button {
-    background-color: rgb(10,102,194);
-    color: rgb(255,255,255);
-    padding: 11px 23px;
-    border: none;
-    border-radius: 23px;
-    font-size: 19px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.15s;
-  }
+    <hr>
 
-  .apply-button:hover {
-    background-color: rgb(9, 70, 131);
-  }
+    <!-- Challenges -->
+    <!--4h-->
+    <button class="back-button">Back</button>
+    <a class="pagination" href="#">1</a>
+    <a class="pagination" href="#">2</a>
+    <a class="pagination" href="#">3</a>
+    <a class="pagination" href="#">4</a>
+    <a class="pagination" href="#">5</a>
+    <button class="next-button">Next</button>
 
-  .save-button {
-    background-color: rgb(255, 255, 255);
-    color: rgb(10,102,194);
-    padding: 10px 19px;   
-    border: rgb(10,102,194) 1px solid;
-    border-radius: 23px;
-    font-size: 19px;
-    font-weight: bold;
-    margin: 10px;
-    cursor: pointer;
-    transition: background-color 0.15s,
-      border-width 0.15s;
-  }
+    <hr>
 
-  .save-button:hover {
-    background-color: rgb(231, 244, 255);
-    border-width: 2px;
-  }
+    <!--4i-->
+    <button class="stretch-button">Stretch</button>
 
-  .back-button {
-    padding: 8px;
-    margin-right: 10px;
-    font-size: 16px;
-    font-weight: 400;
-  }
+    <hr>
 
-  .next-button {
-    padding: 8px;
-    margin-left: 4px;
-    font-size: 16px;
-    font-weight: 400;
-  }
-  
-  .pagination {
-    margin-right: 6px;
-    font-size: 16px;
-    font-weight: 400;
-  }
+    <!--4j-->
+    <button class="shadow-button">Shadow</button>
 
-  .stretch-button {
-    padding: 7px 15px;
-    background-color: green;
-    color: #fff;
-    border: none;
-    font-size: 17px;
-    font-weight: 400;
-    cursor: pointer;
-    transition: padding 1s;
-  }
+    <hr>
 
-  .stretch-button:hover {
-    padding: 16px 36px;
-  }
-
-  .shadow-button {
-    padding: 7px 15px;
-    background-color: green;
-    color: #fff;
-    border: none;
-    font-size: 17px;
-    font-weight: 400;
-    cursor: pointer;
-    box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 0.15s;
-  }
-
-  .shadow-button:active {
-    margin: 2px 0 0 2px;
-    box-shadow: none;
-  }
-
-  .number-button {
-    padding: 8px 15px;
-    background-color: green;
-    color: #fff;
-    border: none;
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0 10px;
-    transition: padding 0.2s,
-      margin 0.2s;
-  }
-
-  .number-button:hover {
-    padding: 8px 25px;
-    margin: 0;
-  }
-
-</style>
-
-<!--4a-->
-<button class="request-button">
-  Request now
-</button>
-
-<hr>
-
-<!--4b-->
-<button class="add-to-cart-button">
-  Add to Cart
-</button>
-
-<hr>
-
-<!--4c-->
-<button class="sign-up-button">
-  Sign up
-</button>
-
-<hr>
-
-<!--4d-->
-<button class="get-started-button">
-  Get started
-</button>
-
-<button class="download-button">
-  Download
-</button>
-
-<hr>
-
-<!--4e-->
-<button class="apply-button">
-  Apply on company website
-</button>
-
-<button class="save-button">
-  Save
-</button>
-
-<hr>
-
-<!-- Challenges -->
-<!--4h-->
-<button class="back-button">Back</button>
-<a class="pagination" href="#">1</a>
-<a class="pagination" href="#">2</a>
-<a class="pagination" href="#">3</a>
-<a class="pagination" href="#">4</a>
-<a class="pagination" href="#">5</a>
-<button class="next-button">Next</button>
-
-<hr>
-
-<!--4i-->
-<button class="stretch-button">Stretch</button>
-
-<hr>
-
-<!--4j-->
-<button class="shadow-button">Shadow</button>
-
-<hr>
-
-<!--4k-->
-<button class="number-button">One</button>
-<button class="number-button">Two</button>
-<button class="number-button">Three</button>
+    <!--4k-->
+    <button class="number-button">One</button>
+    <button class="number-button">Two</button>
+    <button class="number-button">Three</button>
+  </body>
+</html>
